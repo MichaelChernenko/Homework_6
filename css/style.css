@@ -202,6 +202,14 @@
         vertical-align: middle;
     }
 
+    .text_item {
+        margin-right: 2px;
+    }
+
+    .text_cost {
+        margin-right: 12px;
+    }
+
     .number {
         color: #0d5a8f;
         font-size: 12px;
@@ -476,15 +484,22 @@
 
 
     input[type="checkbox"] {
-        margin-top: 10px;
-        margin-left: 10px;
+        
+        display: none;
     }
 
     label {
+        display: inline-block;
         color: #465961;
         font-family: 'lucida_sans_unicoderegular';
         font-size: 13px;
         font-weight: 400;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .label_bottom {
+        margin-bottom: 10px;
     }
 
     .aside_left_margin {
@@ -500,7 +515,7 @@
     }
 
     .right_disc_outer {
-        top: 160px;
+        top: 156px;
     }
 
     .right_header_list {
@@ -511,7 +526,54 @@
         width: 100px;
     }
 
-    input[value="выбрать"]{
+
+label:before {
+    content: "";
+    display: inline-block;
+    border-radius: 3px;
+    width: 9px;
+    height: 9px;
+    margin-right: 10px;
+    position: absolute;
+    left: 37px;
+    bottom: 200px;
+    background-color: transparent;
+    box-shadow: inset 0px 2px 3px 0px rgba(27, 66, 95, .8);, 0px 1px 0px 0px rgba(27, 66, 95, .8);
+}
+
+label[for="bus_checkbox2"]:before {
+    position: absolute;
+    bottom: 177px;
+}
+
+label[for="bus_checkbox3"]:before {
+position: absolute;
+    bottom: 153px;
+    }
+
+input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: #1b425f;
+    text-align: center;
+    line-height: 9px;
+}
+
+label[for="disc_checkbox1"]:before {
+    bottom: 90px;
+}
+label[for="disc_checkbox2"]:before {
+    bottom: 66px;
+}
+label[for="disc_checkbox3"]:before {
+    bottom: 43px;
+
+}
+
+
+
+    input[value="выбрать"] {
         width: 82px;
         height: 26px;
         background-color: black;

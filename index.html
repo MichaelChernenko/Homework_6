@@ -46,7 +46,7 @@
                 <a href="#">
                     <img class="basket_img" src="img/basket.png" alt="корзина">
                 </a>
-                <span class="text">товаров:&nbsp;</span><span class="number">0</span><span class="text">на сумму:&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="number">0,00 грн.</span>
+                <span class="text text_item">товаров:</span><span class="number">0</span><span class="text text_cost">на сумму:</span><span class="number">0,00 грн.</span>
             </div>  
         </nav>
         <div class="filters clearfix">
@@ -167,75 +167,81 @@
                         </section>
                         <aside class="right_aside">
                             <span class="header_list right_header_list">бренды:</span>
-                            <div class="outer_circle right_aside_circle">
-                                <div class="inner_circle"></div>
+                            <ul>
+                                <li>
+                                    <div class="outer_circle right_aside_circle">
+                                        <div class="inner_circle"></div>
+                                    </div>
+                                    <div class="aside_left_margin">
+                                        <div class="name_list name_list_right">Шины</div>
+                                        <ul>
+                                            <form action="">
+                                                <li>
+
+                                                        <input type="checkbox" name="brend_checkbox" id="bus_checkbox1"> 
+                                                        <label for="bus_checkbox1">Бренд 1</label>
+                                                    
+                                                </li>
+                                                <li>
+                                                        <input type="checkbox" name="brend_checkbox" id="bus_checkbox2">  
+                                                        <label for="bus_checkbox2">Бренд 2</label>
+                                                </li>
+                                                <li>
+                                                        <input class="input_bottom" type="checkbox" name="brend_checkbox" id="bus_checkbox3"> 
+                                                        <label class="label_bottom" for="bus_checkbox3">Бренд 3</label>
+                                                </li>
+                                            </form>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="outer_circle disc_outer_circle right_aside_circle right_disc_outer">
+                                            <div class="inner_circle"></div>
+                                        </div>
+                                        <div class="aside_left_margin">
+                                            <div class="name_list name_list_right">Диски</div> 
+                                            <ul>
+                                                <form action="">
+                                                    <li>
+                                                            <input type="checkbox" name="brend_checkbox" id="disc_checkbox1"> 
+                                                            <label for="disc_checkbox1">Бренд 1</label>  
+                                                    </li>
+                                                    <li>
+                                                            <input type="checkbox" name="brend_checkbox" id="disc_checkbox2">   
+                                                            <label for="disc_checkbox2">Бренд 2</label>
+                                                    </li>
+                                                    <li>
+                                                            <input class="input_bottom" type="checkbox" name="brend_checkbox" id="disc_checkbox3"> 
+                                                            <label class="label_bottom" for="disc_checkbox3">Бренд 3</label>
+                                                    </li>
+                                                    <input type="submit" value="выбрать">
+                                                </form>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </aside>
                             </div>
-                            <div class="aside_left_margin">
-                                <div class="name_list name_list_right">Шины</div>
-                                <form action="#">
-                                    <label>
-                                        <input type="checkbox" name="brend_checkbox" id=""> 
-                                        Бренд 1
-                                    </label>
-                                    <br>
-                                    <label>
-                                        <input type="checkbox" name="brend_checkbox" id="">  
-                                        Бренд 2
-                                    </label> 
-                                    <br>
-                                    <label>
-                                        <input class="input_bottom" type="checkbox" name="brend_checkbox" id=""> 
-                                        Бренд 3
-                                    </label>
-                                    <br>
-                                </form>
-                                <div class="outer_circle disc_outer_circle right_aside_circle right_disc_outer">
-                                    <div class="inner_circle"></div>
-                                </div>
-                                <div class="name_list name_list_right">Диски</div> 
-                                <form action="#">
-                                   <label>
-                                    <input type="checkbox" name="brend_checkbox" id=""> 
-                                    Бренд 1  
-                                </label> 
-                                <br>
-                                <label>
-                                    <input type="checkbox" name="brend_checkbox" id="">   
-                                    Бренд 2
-                                </label>
-                                <br>
-                                <label>
-                                    <input class="input_bottom" type="checkbox" name="brend_checkbox" id=""> 
-                                    Бренд 3
-                                </label>
-                                <br>
-                                <input type="submit" value="выбрать">
-                            </form> 
-                        </div>   
-                    </aside>
+                        </div>
+                    </div>
                 </div>
+                <div class="brend_logo">
+                    <a href="#"><img class="brend_image left_logo" src="img/logo1.png" alt="логотип бренда"></a>
+                    <a href="#"><img class="brend_image" src="img/logo2.png" alt="логотип бренда"></a>
+                    <a href="#"><img class="brend_image" src="img/logo3.png" alt="логотип бренда"></a>
+                    <a href="#"><img class="brend_image" src="img/logo4.png" alt="логотип бренда"></a>
+                    <a href="#"><img class="brend_image" src="img/logo5.png" alt="логотип бренда"></a>
+                    <a href="#"><img class="brend_image" src="img/logo6.png" alt="логотип бренда"></a>
+                    <a href="#"><img class="brend_image" src="img/logo7.png" alt="логотип бренда"></a>
+                    <a href="#"><img class="brend_image" src="img/logo8.png" alt="логотип бренда"></a>
+                </div>
+                <footer>
+                    <ul>
+                        <li><a href="">О компании</a><span class="sep_footer">|</span></li>
+                        <li><a href="">Доставка</a><span class="sep_footer">|</span></li>
+                        <li><a href="">Статьи</a><span class="sep_footer">|</span></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                    <spam class="copyright"> Создание сайта © Global Vision</spam>
+                </footer>
             </div>
-        </div>
-    </div>
-    <div class="brend_logo">
-        <a href="#"><img class="brend_image left_logo" src="img/logo1.png" alt="логотип бренда"></a>
-        <a href="#"><img class="brend_image" src="img/logo2.png" alt="логотип бренда"></a>
-        <a href="#"><img class="brend_image" src="img/logo3.png" alt="логотип бренда"></a>
-        <a href="#"><img class="brend_image" src="img/logo4.png" alt="логотип бренда"></a>
-        <a href="#"><img class="brend_image" src="img/logo5.png" alt="логотип бренда"></a>
-        <a href="#"><img class="brend_image" src="img/logo6.png" alt="логотип бренда"></a>
-        <a href="#"><img class="brend_image" src="img/logo7.png" alt="логотип бренда"></a>
-        <a href="#"><img class="brend_image" src="img/logo8.png" alt="логотип бренда"></a>
-    </div>
-    <footer>
-        <ul>
-            <li><a href="">О компании</a><span class="sep_footer">|</span></li>
-            <li><a href="">Доставка</a><span class="sep_footer">|</span></li>
-            <li><a href="">Статьи</a><span class="sep_footer">|</span></li>
-            <li><a href="">Контакты</a></li>
-        </ul>
-        <spam class="copyright"> Создание сайта © Global Vision</spam>
-    </footer>
-</div>
-</body>
-</html>
+        </body>
+        </html>
